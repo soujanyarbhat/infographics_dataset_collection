@@ -8,19 +8,33 @@ Scraper reference: https://github.com/geduldig/TwitterGeoPics
 The **infographics_dataset_collection** folder has the following structure:
 
 1. code/
+
 a. scraper.ipynb = Notebook to scrape infographics from twitter
+
 b. classifier.ipynb = Notebook to train ResNet50 CNN classifier
+
 c. predictions.ipynb = Notebook to predict labels from test data
+
 2. data/
+
 a. raw/ = Images downloaded from twitter using the scraper
+
 b. train/ = Labeled images('info', 'notinfo')
+
 c. test/ = Unlabeled images
+
 3. models/ = To store trained models used for predictions
+
 a. infographics-classifier.pth = using ResNet50
+
 4. output/
+
 a. predictions.csv = Model predictions in the format (filename, label)
+
 b. info/ = Folder containing all images from the test set labelled as 'info' by the model
+
 5. twitter_auth.conf = Twitter Authentication credentials for scraping (Steps for tokens- https://gist.github.com/varunchaudharycs/2af83ccb19a03265a24c4942e8248c3c)
+
 6. TwitterGeoPics/ = Scraper used
 
 ### Dependencies
