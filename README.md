@@ -62,3 +62,4 @@ Environment variables(paths) set in respective notebooks
 - Run predictions notebook to label the unlabelled images in data/test/
 
 
+published site: https://soujanyarbhat.github.io/infographics_dataset_collection/
